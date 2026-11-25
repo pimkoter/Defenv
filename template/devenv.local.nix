@@ -6,6 +6,7 @@
   ...
 }:
 {
+  env.DEVENV = "TRUE";
   enterShell = ''
     if [[ $- == *i* && -z "''${__pim_rc:-}" ]]; then
       __pim_rc=1
